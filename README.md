@@ -66,8 +66,6 @@ create or replace procedure hello()
                             packages=('snowflake-snowpark-python')
                             imports=('@github_sis_example/branches/main/sproc-example.py')
                             handler='sproc-example.main';
-
-                            DROP PROCEDURe HELLO();
 call hello();
 
 -- create streamlit application
