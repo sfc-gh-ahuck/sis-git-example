@@ -4,7 +4,7 @@ from snowflake.snowpark.context import get_active_session
 import snowflake.snowpark.functions as F
 
 # Write directly to the app
-st.title("🧾 Historic Tax Rates")
+st.title("🧾 Historic Tax Rates 123")
 st.write(
     """Replace this example with your own code!
     **And if you're new to Streamlit,** check
