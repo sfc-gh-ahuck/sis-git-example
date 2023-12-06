@@ -1,7 +1,7 @@
 # Git Integration Demos
 
 ## Self contained Demo Script
-```
+```sql
 -- Context
 CREATE DATABASE IF NOT EXISTS DEMO_GIT;
 CREATE WAREHOUSE IF NOT EXISTS DEMO_GIT_WH 
@@ -51,8 +51,8 @@ ls @github_sis_example/branches/main;
 -- list file details
 ls @github_sis_example/branches/main/hello.sql;
 
-
 -- copy files from SnowGit repo to stage
+CREATE OR REPLACE STAGE stage
 copy files into @stage from @github_sis_example/branches/main;
 
 -- fetch git repository
