@@ -1,4 +1,4 @@
-create or replace procedure hello()
+create or replace procedure hello2()
                             returns string
                             language python
                             runtime_version='3.10'

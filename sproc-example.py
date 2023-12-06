@@ -2,7 +2,7 @@
 # You can add more packages by selecting them using the Packages control and then importing them.
 
 import snowflake.snowpark as snowpark
-from snowflake.snowpark.functions import col, coalesce, lit, trim
+from snowflake.snowpark.functions import coalesce, trim
 import pandas as pd
 
 def main(session: snowpark.Session): 
