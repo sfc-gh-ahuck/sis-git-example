@@ -12,4 +12,4 @@ st.write(
 
 session = get_active_session()
 
-st.ballons()
+st.balloons()
