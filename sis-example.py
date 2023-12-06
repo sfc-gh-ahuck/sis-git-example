@@ -16,7 +16,7 @@ st.write(
 session = get_active_session()
 
 
-tax_df = session.table("CORPORATE_TAX_RATES").select(F.col("COUNTRY"), F.col("YEAR"), F.col("RATE")) # Source Table
+tax_df = session.table("FINANCIAL_DATA.PUBLIC.CORPORATE_TAX_RATES").select(F.col("COUNTRY"), F.col("YEAR"), F.col("RATE")) # Source Table
 countries_df = tax_df.select(F.col("Country")).distinct() # Get Countries for the Drop Down
 
 selected_country = st.selectbox("COUNTRY", countries_df) # Get selected country
