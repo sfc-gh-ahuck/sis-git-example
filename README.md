@@ -52,8 +52,8 @@ ls @github_sis_example/branches/main;
 ls @github_sis_example/branches/main/hello.sql;
 
 -- copy files from SnowGit repo to stage
-CREATE OR REPLACE STAGE stage
-copy files into @stage from @github_sis_example/branches/main;
+CREATE OR REPLACE STAGE stage;
+copy files into @stage from @github_sis_example/branches/main/;
 
 -- fetch git repository
 alter git repository github_sis_example fetch;
