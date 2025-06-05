@@ -79,8 +79,9 @@ query_warehouse = 'DEMO_GIT_WH';
 execute immediate from @github_sis_example/branches/main/hello.sql;
 
 -- automate creation of objects
-execute immediate from @github_sis_example/branches/main/deploy_hello.sql;
-call hello2();
+execute immediate from @github_sis_example/branches/main/deploy_hello.sql
+ USING ( environment => 'dev' );
+call hello_dev();
 
 --------------
 -- clean up --
