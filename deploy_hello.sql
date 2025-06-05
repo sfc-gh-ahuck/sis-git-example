@@ -1,3 +1,4 @@
+--!jinja
 create or replace procedure hello_{{ environment }}()
     returns string
     language python
